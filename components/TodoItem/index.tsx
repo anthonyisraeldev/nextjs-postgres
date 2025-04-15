@@ -43,7 +43,7 @@ export default function TodoItem({
     await toggleTodo(id);
     setActionDone(!actionDone);
     if (actionDone) toast("Note complete 😶‍🌫️");
-    if (!actionDone) toast("Note no complete 😀");
+    if (!actionDone) toast("Note not complete 😀");
   };
 
   return (
@@ -74,7 +74,11 @@ export default function TodoItem({
         </Button>
       </div>
       <div
-        className={`border p-4 rounded-md mb-3 ${todo.done ? "bg-green-100 border-green-500 text-green-500" : "bg-orange-100 border-orange-500 text-orange-500"} `}
+        className={`border p-4 rounded-md mb-3 ${
+          todo.done
+            ? "bg-green-100 border-green-500 text-green-500"
+            : "bg-orange-100 border-orange-500 text-orange-500"
+        } `}
       >
         <p>{text}</p>
       </div>
