@@ -2,7 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Create a .env file and add you url cloud DB:
+
+DATABASE_URL=postgresql://neondb_owner:EXAMPLE_URL
+
+And next, run the development server:
 
 ```bash
 npm run dev
