@@ -4,7 +4,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Create a .env file and add you url cloud DB:
 
+```bash
 DATABASE_URL=postgresql://neondb_owner:EXAMPLE_URL
+```
 
 And next, run the development server:
 
